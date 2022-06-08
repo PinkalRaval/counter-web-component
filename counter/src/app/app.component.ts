@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+  resultOfCounter!:number;
+  counter(num:number) {
+    this.resultOfCounter = num;
+  }
 }

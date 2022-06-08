@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-counter-web-component',
@@ -6,16 +6,17 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./counter-web-component.component.css']
 })
 export class CounterWebComponentComponent implements OnInit {
- @Input() counter:number = 0;
+  @Output() counterItem = new EventEmitter<number>();  
+  counter:number = 0;
   constructor() { }
 
   ngOnInit(): void {
   }
   incrementButton() {
-    this.counter++;
+    this.counterItem.emit(this.counter++);
   }
   decrementButton() {
-    this.counter--;
+    this.counterItem.emit(this.counter--);
   }
 
 }
