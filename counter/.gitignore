@@ -1,0 +1,10 @@
+# NativeScript
+node_modules/
+platforms/
+.gradle/
+.settings/
+dist/
+.angular/
+
+# Visual Studio Code
+.vscode/

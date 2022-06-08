@@ -1,0 +1,13 @@
+.counter-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border: 2px solid brown;
+    align-items: center;
+}
+.btn {
+    margin: auto;
+    height: 20px;
+    width: 30px;
+    background-color: rgb(0, 145, 255);
+}
