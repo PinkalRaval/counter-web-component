@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'counter';
   resultOfCounter!:number;
+  text!:string;
   counter(num:number) {
     this.resultOfCounter = num;
+  }
+  submit(text:string) {
+    this.text = text;
   }
 }

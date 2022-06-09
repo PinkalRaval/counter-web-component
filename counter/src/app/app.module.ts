@@ -23,7 +23,7 @@ import { CounterWebComponentComponent } from './counter-web-component/counter-we
 export class AppModule {
   constructor(private injector: Injector) {
     const el = createCustomElement(CounterWebComponentComponent, { injector });
-    customElements.define('counter-button', el);
+    customElements.define('input-label', el);
   }
   ngDoBootstrap() {}
 
