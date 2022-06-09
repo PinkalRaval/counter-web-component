@@ -1,12 +1,13 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-counter-web-component',
   templateUrl: './counter-web-component.component.html',
-  styleUrls: ['./counter-web-component.component.css']
+  styleUrls: ['./counter-web-component.component.css'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class CounterWebComponentComponent implements OnInit {
-  @Output() counterItem = new EventEmitter<number>();  
+  @Output('counterButton') counterItem = new EventEmitter<number>();  
   counter:number = 0;
   constructor() { }
 

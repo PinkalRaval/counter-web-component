@@ -8,19 +8,8 @@
     <title>Document</title>
     <base href="/">
 </head>
-<script>
-    window.addEventListener('load', () => {
-        const counter = document.querySelector('counter-button');
-        counter.addEventListener('counterItem', (event) => {
-            document.getElementById('counterNumber').textContent = event.detail;
-        });
-    });
-   
-</script>
-
 <body>
     <counter-button></counter-button>
-    <label id="counterNumber"></label>
     <script type="text/javascript" src="news-widget.js"></script>
 </body>
 
